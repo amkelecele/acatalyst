@@ -1,31 +1,21 @@
-# ACatalyst v2
+# ACatalyst v3
 
-A visual portfolio update for ACatalyst with a fictional café website and matching printable poster. This is a static site for Cloudflare Pages.
+A static portfolio for ACatalyst, featuring three fictional concept businesses: Sundown Coffee, Edge & Co. barbershop, and Petal House flower studio. Each has a website view and a matching promotional poster. These examples are portfolio concepts, not client projects.
 
 ## Preview locally
 
-From this directory, run:
-
-```sh
-python -m http.server 8000
-```
-
-Open `http://localhost:8000/`. View the café at `/work/sundown/` and its poster at `/work/sundown/poster.html`. Use the poster's **Print / save PDF** button for a print copy. The café and its copy are fictional concept work.
+From this directory, run `python -m http.server 8000`, then open `http://localhost:8000/`. Select any project on the homepage. Each project's poster page has a **Print / save PDF** button.
 
 ## Publish through your connected GitHub repository
 
-Copy the contents of this directory into the root of your local `acatalyst` repository, replacing `index.html`, `README.md`, and `robots.txt`. Then from that repository:
+Copy **all contents** of this directory into the root of your local `acatalyst` repository, replacing the old files. From that repository, run:
 
 ```sh
 git add .
-git commit -m "Add visual portfolio and Sundown concept"
+git commit -m "Add three portfolio concepts"
 git push
 ```
 
-Cloudflare Pages should deploy the new commit automatically. Your existing Pages settings stay: framework None, build command `exit 0`, output directory `.`.
+Cloudflare Pages should deploy the new commit automatically. For the existing static setup, keep framework **None**, build command `exit 0`, and output directory `.`. The ChatGPT Sites copy is separate from this GitHub deployment.
 
-The ChatGPT Sites copy is separate and will not update from GitHub.
-
-## Asset
-
-The café photograph in `assets/sundown-cafe.png` was generated for this fictional portfolio concept. It is used by the portfolio, café website, and poster.
+The images in `assets/` were generated for these fictional portfolio concepts.
